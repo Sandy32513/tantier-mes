@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Operon OPS 1.0</title>
+  <link rel="stylesheet" href="/public/css/login.css">
+</head>
+<body>
+  <div class="login-shell">
+    <aside class="hero">
+      <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=1600&q=80" alt="Smart Factory" onerror="this.onerror=null;this.src='/public/images/industrial-automation.jpg';">
+      <div class="hero-overlay">
+        <h1>Operon OPS 1.0</h1>
+        <p class="hero-subline">Smart Factory Operations Platform</p>
+        <p class="hero-build">Build 2026.03</p>
+      </div>
+    </aside>
+
+    <main class="panel">
+      <div class="panel-head">
+        <div class="logo">O</div>
+        <div>
+          <h2>Operon OPS 1.0</h2>
+          <p>Smart Factory Operations Platform</p>
+        </div>
+      </div>
+
+      <form id="login-form" novalidate>
+        <label for="userId">User ID</label>
+        <input id="userId" name="userId" type="text" placeholder="Enter numeric User ID" autocomplete="username">
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter password" autocomplete="current-password">
+
+        <button type="submit">Login</button>
+        <p id="error-msg" class="error"></p>
+      </form>
+
+      <div class="hint">
+        <strong>Default Login:</strong><br>
+        UserID: <code>228799</code><br>
+        Password: <code>Anu@8047</code>
+      </div>
+    </main>
+  </div>
+
+  <footer class="login-footer">
+    <span>&copy; 2026 SS Electronics Pvt Ltd</span>
+    <span>Operon Operations Platform Suite (OPS)</span>
+    <span>All Rights Reserved</span>
+  </footer>
+
+  <script src="/public/js/login.js"></script>
+</body>
+</html>
+
+

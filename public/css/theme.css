@@ -1,0 +1,90 @@
+/* 
+  ═══════════════════════════════════════════════════════════════════
+  HANDCRAFTED THEME - Inspired by Japanese Wabi-Sabi & Artisan Crafts
+  Designed with: Natural textures, earthy tones, indigo blues, terracotta
+  ═══════════════════════════════════════════════════════════════════
+*/
+
+:root {
+  /* ════ Primary Colors - Japanese Indigo & Sumi Ink ════ */
+  --blue: #2B4C7E;           /* Ai-iro (Indigo) */
+  --blue-light: #3D5A80;     /* Lighter indigo */
+  --blue-dark: #1A365D;      /* Deep sumi ink */
+  
+  /* ════ Accent Colors - Earth & Clay ════ */
+  --terracotta: #C2703E;     /* Tsuchi (earth) */
+  --terracotta-light: #D4855C;
+  --terracotta-dark: #9C5929;
+  --sage: #8B9A7D;          /* Natural green */
+  --sage-light: #A8B89B;
+  
+  /* ════ Background - Washi Paper Tones ════ */
+  --background: #F5F1EB;     /* Aged washi paper */
+  --surface: #FDFBF7;        /* White washi */
+  --surface-elevated: #FFFFFF;
+  
+  /* ════ Text Colors - Sumi Ink Tones ════ */
+  --text: #2D2926;           /* Sumi ink black */
+  --text-secondary: #5C5552;
+  --text-muted: #8C8582;
+  --mutedText: #7A7572;
+  
+  /* ════ Table Styling ════ */
+  --tableHeader: #E8E4DC;    /* Natural paper */
+  --table-line: #D4CFC7;
+  --rowHover: #F0EBE3;
+  --rowSelected: #E5DFD5;
+  
+  /* ════ Borders & Lines ════ */
+  --borderNeutral: #C9C3BA;
+  --borderLight: #E0DCD4;
+  
+  /* ════ Status Colors - Muted Artisan Tones ════ */
+  --red: #A63D40;            /* Faded red (beni) */
+  --green: #5B7553;          /* Matcha green */
+  --yellow: #C9A227;         /* Gold lacquer */
+  --orange: #B86E3E;         /* Persimmon */
+  
+  /* ════ Interactive States ════ */
+  --hoverNeutral: #EDE8DF;
+  --sidebarActive: #DDD5C7;
+  --focus: var(--blue);
+  
+  /* ════ Shadows & Depth ════ */
+  --shadowSm: 0 1px 3px rgba(45, 41, 38, 0.08);
+  --shadowMd: 0 4px 8px rgba(45, 41, 38, 0.1), 0 2px 4px rgba(45, 41, 38, 0.06);
+  --shadowLg: 0 8px 16px rgba(45, 41, 38, 0.12), 0 4px 8px rgba(45, 41, 38, 0.08);
+  
+  /* ════ Design Elements ════ */
+  --radius: 4px;
+  --radius-lg: 8px;
+  --transition: 200ms ease;
+  
+  /* ════ Subtle Texture Overlays (CSS Patterns) ════ */
+  --texture-paper: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232D2926' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ════ Custom Scrollbar - Minimal ════ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--borderNeutral);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ════ Selection Color ════ */
+::selection {
+  background: var(--blue);
+  color: white;
+}
